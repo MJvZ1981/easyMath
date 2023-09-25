@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Splice from "./Pages/Splice";
-import HomePage from "./Pages/HomePage";
-import Addition from "./Pages/Addition";
-import Subtraction from "./Pages/Subtraction";
-import Multiplication from "./Pages/Multiplication";
-import Divsion from "./Pages/Divsion";
+import Splice from "./pages/Splice";
+import HomePage from "./pages/HomePage";
+import Addition from "./pages/Addition";
+import Subtraction from "./pages/Subtraction";
+import Multiplication from "./pages/Multiplication";
+import Divsion from "./pages/Divsion";
 
 function App() {
   return (
