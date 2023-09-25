@@ -10,7 +10,7 @@ import Divsion from "./Pages/Divsion";
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/MathApp">
+      <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/splitsen" element={<Splice />} />
