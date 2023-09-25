@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build" # Adjust this command based on your build script
+  publish = "dist"          # Specify the directory containing your built files
+
+[settings]
+  node_version = "16" # Adjust to match your Node.js version
+
+[dev]
+  publish = "dist"    # Specify the directory for local development (optional)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
