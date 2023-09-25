@@ -69,7 +69,8 @@ function Body({ twenty, hundred, onTwenty, onHundred }) {
           </NavLink>
         </div>
       )}
-      {hundred && (
+      {
+        hundred && <div>Under construction</div> /* {hundred && (
         <div className="pb-20 flex gap-4 justify-center items-center h-[40%] width-[50%]">
           <NavLink to="/splitsen" className={styles.link}>
             <div
@@ -118,7 +119,8 @@ function Body({ twenty, hundred, onTwenty, onHundred }) {
             <h1 className={styles.base}>Deelsommen</h1>
           </NavLink>
         </div>
-      )}
+      )} */
+      }
     </div>
   );
 }
