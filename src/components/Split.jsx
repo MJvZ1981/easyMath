@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../../index.css";
 
 function Split({ onHandleScore, index, onFeedback }) {
   const [currentNumber, setCurrentNumber] = useState(
@@ -84,10 +85,13 @@ function Split({ onHandleScore, index, onFeedback }) {
   }, []);
 
   return (
-    <div className="relative flex flex-col w-[122px] h-1/2">
-      <div className="absolute ml-[18px] mt-[6px] border-black bg-emerald-300 border-t-[3px] border-l-[3px] transform rotate-45 w-[87px] h-[87px]"></div>
-      <div className="absolute flex items-center justify-center w-[122px] h-[60px] pt-[40px] pr-[2px]">
-        <div className="pb-[48px] font-semibold text-2xl">{currentNumber}</div>
+    <div className="relative flex flex-col w-[122px] h-[360px]">
+      <div className="absolute z-0 bg-black w-[136px] h-[68px] triangle mt-[-19px] ml-[-7px]">
+        <div className="absolute z-10 bg-emerald-300 w-[122px] h-[60px] triangle text-center pt-5 mt-[5px] ml-[7px]">
+          <div className="pb-[48px] font-semibold text-2xl">
+            {currentNumber}
+          </div>
+        </div>
       </div>
       <div className=" w-[full] h-[50px]"></div>
       {splits.map((value, index) => (
